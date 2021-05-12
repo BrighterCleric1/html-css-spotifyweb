@@ -1,0 +1,77 @@
+ul{
+    list-style: none;
+}
+.app{
+    max-height: 100vh;
+}
+
+.app main{
+    height: calc(100vh - 90px);
+}
+
+.app footer{
+    z-index: 1;
+    height: 90px;
+    background-color: #181818;
+}
+
+.sidebar{
+    z-index: -1;
+    color: white;
+    background-color: #000000;
+    display: flex;
+    flex-flow: column;
+    padding: 20px;
+}
+
+.content{
+    background-color: #121212;
+    overflow-y: scroll;
+    height: 100%;
+}
+
+.upgrade{
+    padding-right: 15px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.upgrade button{
+    border-style: none;
+    height: 45px;
+    border-radius: 25px;
+    width: 200px;
+}
+
+.logo{
+    width: 80%;
+}
+
+.sidebar-buttons{
+margin-top: 20px;
+}
+
+.sidebar-buttons li {
+    margin-top: 10px;
+}
+
+.sidebar-playlist{
+    margin-top: 20px;
+}
+
+.sidebar-playlist div{
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-playlist i{
+    font-size: 40px;
+    margin-right: 7px;
+}
+
+.sidebar-playlist *{
+    margin-top: 10px;
+}
