@@ -1,4 +1,5 @@
 *{
+    font-family: 'Montserrat', sans-serif;
     color: white;
 }
 ul{
@@ -13,7 +14,6 @@ ul{
 }
 
 .app footer{
-    z-index: 1;
     height: 90px;
     background-color: #181818;
 }
