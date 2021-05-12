@@ -30,7 +30,7 @@ ul{
 }
 
 .sidebar *{
-    margin: 10px 0px 10px 10px;
+    margin: 10px 0px 10px 5px;
 }
 
 .top-sidebar{
@@ -110,8 +110,9 @@ nav ul li{
     margin-right: 12px;
 }
 
-.content h3{
-    margin-left: 20px;
+.content h3, .content span{
+    margin-left: 27px;
+    margin-top: 40px;
 }
 
 .albums{
@@ -121,7 +122,12 @@ nav ul li{
     width: 90%;
 }
 
-.content span{
-    margin-left: 20px;
+.artists .item img
+{
+    border-radius: 50%;
 }
 
+.item{
+    text-align: center;
+    margin-top: 20px;
+}
