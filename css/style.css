@@ -257,7 +257,7 @@ footer i{
 
 .song-bar{
     width: 70%;
-    background: #fff;
+    background: #AEAEAE;
     height: 10px;
     margin: 0 auto;
     border-radius: 10px;
@@ -265,7 +265,7 @@ footer i{
 
 .volume-bar{
     width: 100%;
-    background: #fff;
+    background: #AEAEAE;
     height: 10px;
     margin: 0 auto;
     border-radius: 10px;
@@ -339,7 +339,7 @@ footer i{
     border-left: 2px solid green;
 }
 
-nav ul li::after {
+nav ul li::after{
     content: "";
     width: 50%;
     height: 2px;
@@ -351,11 +351,11 @@ nav ul li::after {
     bottom: -3px;
     display: none;
 }
+
 nav ul li:hover::after{
     display: initial;
 }
    
-}
 @media all and (max-width: 575px){
     .buttons-name{
         display: none;
