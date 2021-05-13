@@ -25,7 +25,7 @@ ul{
     display: flex;
     flex-flow: column;
     justify-content: space-between;
-    height: 100%;
+    height: calc(100vh - 90px);
     overflow-y: hidden;
     font-size: 12px;
 }
@@ -35,7 +35,9 @@ ul{
 }
 
 .top-sidebar{
-    flex-shrink: 2;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
 }
 .content{
     background-color: #121212;
@@ -51,6 +53,7 @@ ul{
     justify-content: flex-end;
     background-color: rgba(0, 0, 0, 1);
     width: 100%;
+    z-index: 10;
 }
 
 .upgrade div{
@@ -85,6 +88,9 @@ margin-top: 20px;
 
 .sidebar-playlist{
     margin-top: 20px;
+    flex-shrink: 1;
+    flex-grow: 1;
+    overflow: auto;
 }
 
 .sidebar-playlist div{
@@ -99,6 +105,10 @@ margin-top: 20px;
 
 .sidebar-playlist *{
     margin-top: 10px;
+}
+
+.bot-sidebar{
+    height: 120px;
 }
 
  svg{
@@ -185,7 +195,8 @@ nav ul li{
 }
 
 .icon-play{
-    position: relative
+    position: relative;
+   z-index: 1;
 }
 
 .icon-play  i{
@@ -194,13 +205,34 @@ nav ul li{
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 50px;
-    
+    display: none;
 }
 
-.icon-play img:hover i{
-    display: ;
+footer .row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-play:hover i{
+    display: block;
 } 
 
+.footer-col{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.footer-img{
+    height: 80px;
+    margin: 5px 0 5px 0;
+}
+
+.volume{
+    width: 150%;
+    height: 20px;
+    background-color: #fff;
+}
 @media all and (max-width: 575px){
     .buttons-name{
         display: none;
