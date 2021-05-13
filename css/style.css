@@ -145,6 +145,7 @@ nav ul li{
     display: inline-block;
     color: #AEAEAE;
     margin-right: 12px;
+    position: relative;
 }
 
 .content h3, .content span{
@@ -208,8 +209,12 @@ nav ul li{
     display: none;
 }
 
+footer{
+    font-size: 12px;
+}
+
 footer .row {
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -224,14 +229,132 @@ footer .row {
 }
 
 .footer-img{
-    height: 80px;
-    margin: 5px 0 5px 0;
+    height: 90px;
+    padding: 15px 15px 15px 0px;
 }
 
-.volume{
-    width: 150%;
-    height: 20px;
-    background-color: #fff;
+.footer-row{
+justify-content: space-around;
+align-items: center;
+}
+
+.middle-row{
+    justify-content: space-around;
+}
+
+footer i{
+    font-size: 15px;
+}
+
+.middle-col{
+    display: flex;
+    justify-content: center;
+}
+
+.song{
+    padding-top: 10px;
+}
+
+.song-bar{
+    width: 70%;
+    background: #fff;
+    height: 10px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.volume-bar{
+    width: 100%;
+    background: #fff;
+    height: 10px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.right-footer-col{
+    display: flex;
+    align-items: center;
+}
+
+.right-footer-col .col{
+    flex-grow: 0;
+    padding-right: 5px;
+}
+
+.right-footer-col .volume-bar{
+    flex-grow: 1;
+    min-width: 65px;
+}
+.col-song-icon{
+    display: flex;
+    justify-content: flex-end;
+}
+.song-buttons{
+    padding-left: 15px;
+}
+
+.play-footer{
+    font-size: 40px;
+}
+
+.footer-col i, .right-footer-col i{
+    padding-right: 5px;
+}
+
+
+/* UN PO DI FORMATTAZIONE */
+
+.song-name{
+    color: #AEAEAE;
+}
+
+.sidebar i{
+    color: #AEAEAE;
+}
+
+footer i{
+    color: #AEAEAE;
+}
+
+.sidebar h6{
+    font-size: 15px;
+}
+
+.sidebar-playlist li:hover, footer i:hover, nav ul li:hover, .install .buttons-name:hover, .top-sidebar .buttons-name:hover, .create-playlist:hover, .create-playlist i:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.upgrade button:hover, .play-footer:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.song-name:hover{
+    cursor: pointer;
+    color: white;
+    text-decoration: underline;
+}
+
+.top-sidebar .sidebar-buttons li:hover{
+    border-left: 2px solid green;
+}
+
+nav ul li::after {
+    content: "";
+    width: 50%;
+    height: 2px;
+    background: green;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -3px;
+    display: none;
+}
+nav ul li:hover::after{
+    display: initial;
+}
+   
 }
 @media all and (max-width: 575px){
     .buttons-name{
