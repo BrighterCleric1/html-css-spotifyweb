@@ -191,7 +191,7 @@ nav ul li{
     color: #AEAEAE;
 }
 
-.item  img:hover{
+.item  .icon-play:hover img{
     opacity: 50%;
 }
 
@@ -280,10 +280,10 @@ footer i{
     padding-right: 5px;
 }
 
-.right-footer-col .volume-bar{
+/* .right-footer-col .volume-bar{
     flex-grow: 1;
     min-width: 65px;
-}
+} */
 .col-song-icon{
     display: flex;
     justify-content: flex-end;
